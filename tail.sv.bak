@@ -1,0 +1,2 @@
+module tail(input logic [9:0] xcoord, ycoord, CycleX,CycleY,
+						 output logic outputBit);

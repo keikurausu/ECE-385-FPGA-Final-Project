@@ -1,0 +1,417 @@
+
+Design Space Explorer Report
+-------------------------------------------------------------------------------
+
++------------------------------------------------------------------------+
+| Report Information                                                     |
++------------------------------------------------------------------------+
++--------------------+----------------------------------------------------+
+| Start Date & Time  | Thu Dec 11 17:49:15 CST 2014                       |
+| Working Directory  | /home/evan/Dropbox/ECE 385/Final_Project           |
+| Project Name       | Final_Project                                      |
+| Revision Name      | Final_Project                                      |
+| Quartus II Version | Version 13.0.0 Build 156 04/24/2013 SJ Web Edition |
++--------------------+----------------------------------------------------+
+
+Table of Contents
+    Report Information
+    Legal Notice
+    Flow Messages
+    Flow Summary
+
++-----------------------------------------------------------------------------+
+| Legal Notice                                                                |
++-----------------------------------------------------------------------------+
+Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+Any  megafunction  design,  and related netlist (encrypted  or  decrypted),
+support information,  device programming or simulation file,  and any other
+associated  documentation or information  provided by  Altera  or a partner
+under  Altera's   Megafunction   Partnership   Program  may  be  used  only
+to program  PLD  devices (but not masked  PLD  devices) from  Altera.   Any
+other  use  of such  megafunction  design,  netlist,  support  information,
+device programming or simulation file,  or any other  related documentation
+or information  is prohibited  for  any  other purpose,  including, but not
+limited to  modification,  reverse engineering,  de-compiling, or use  with
+any other  silicon devices,  unless such use is  explicitly  licensed under
+a separate agreement with  Altera  or a megafunction partner.  Title to the
+intellectual property,  including patents,  copyrights,  trademarks,  trade
+secrets,  or maskworks,  embodied in any such megafunction design, netlist,
+support  information,  device programming or simulation file,  or any other
+related documentation or information provided by  Altera  or a megafunction
+partner, remains with Altera, the megafunction partner, or their respective
+licensors. No other licenses, including any licenses needed under any third
+party's intellectual property, are provided herein.
+
++-----------------------------------------------------------------------------+
+| Flow Messages                                                               |
++-----------------------------------------------------------------------------+
+
+Info: Loading space: Selective Performance Optimization Space for Quartus II Integrated Synthesis Projects
+Info: Loading space: Seeds
+Info: Design space contains 11 points
+
++-----------------------------------------------------------------------------+
+| Settings for base                                                           |
++-----------------------------------------------------------------------------+
++----------------------------------------------+----------+
+| Setting                                      | Value    |
++----------------------------------------------+----------+
+| PHYSICAL_SYNTHESIS_REGISTER_RETIMING         | OFF      |
+| SEED                                         | 1        |
+| STATE_MACHINE_PROCESSING                     | AUTO     |
+| MUX_RESTRUCTURE                              | AUTO     |
+| PHYSICAL_SYNTHESIS_COMBO_LOGIC               | OFF      |
+| FITTER_EFFORT                                | FAST FIT |
+| PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION      | OFF      |
+| ROUTER_TIMING_OPTIMIZATION_LEVEL             | NORMAL   |
+| ROUTER_LCELL_INSERTION_AND_LOGIC_DUPLICATION | AUTO     |
+| CYCLONEII_OPTIMIZATION_TECHNIQUE             | BALANCED |
+| PRE_MAPPING_RESYNTHESIS                      | OFF      |
+| PHYSICAL_SYNTHESIS_EFFORT                    | NORMAL   |
+| PLACEMENT_EFFORT_MULTIPLIER                  | 1.0      |
+| ENABLE_BENEFICIAL_SKEW_OPTIMIZATION          | ON       |
++----------------------------------------------+----------+
+
+
++-------------------------------------------------------------------------------+
+| QSF Setting                                                                   |
++-------------------------------------------------------------------------------+
+| set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING OFF          |
+| set_global_assignment -name SEED 1                                            |
+| set_global_assignment -name STATE_MACHINE_PROCESSING AUTO                     |
+| set_global_assignment -name MUX_RESTRUCTURE AUTO                              |
+| set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC OFF                |
+| set_global assignment -name FITTER_EFFORT "FAST FIT"                          |
+| set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION OFF       |
+| set_global_assignment -name ROUTER_TIMING_OPTIMIZATION_LEVEL NORMAL           |
+| set_global_assignment -name ROUTER_LCELL_INSERTION_AND_LOGIC_DUPLICATION AUTO |
+| set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE BALANCED         |
+| set_global_assignment -name PRE_MAPPING_RESYNTHESIS OFF                       |
+| set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT NORMAL                  |
+| set_global_assignment -name PLACEMENT_EFFORT_MULTIPLIER 1.0                   |
+| set_global_assignment -name ENABLE_BENEFICIAL_SKEW_OPTIMIZATION ON            |
++-------------------------------------------------------------------------------+
+
+Info: Revision Final_Project has been compiled successfully already
+Info: Skipping compilation of revision Final_Project
+Info: Recording base-slow-1200mV-85C results
+Info: Recording base-slow-1200mV-0C results
+Info: Recording base-fast-1200mV-0C results
+Info: Archiving base results
+
++-----------------------------------------------------------------------------+
+| Results for base                                                            |
++-----------------------------------------------------------------------------+
++------------------------------------------------------------------+------------------------------+
+| All Failing Paths                                                | 0                            |
+| ASMI blocks                                                      | 0 / 1 ( 0 % )                |
+| Average fan-out                                                  | 3.55                         |
+| Average interconnect usage (total/H/V)                           | 28% / 26% / 30%              |
+| Clock Hold: 'Clk': Per-clock Edge TNS                            | 0.000 ns                     |
+| Clock Hold: 'Clk': Per-clock Keeper TNS                          | 0.000 ns                     |
+| Clock Hold: 'Clk': Worst-case Slack                              | 0.400 ns                     |
+| Clock Hold: Total Keeper TNS                                     | 0.0 ns                       |
+| Clock Period: Geometric Mean                                     | 17.84 ns                     |
+| Clock Recovery: 'Clk': Per-clock Edge TNS                        | 0.000 ns                     |
+| Clock Recovery: 'Clk': Per-clock Keeper TNS                      | 0.000 ns                     |
+| Clock Recovery: 'Clk': Worst-case Slack                          | 14.003 ns                    |
+| Clock Recovery: Total Keeper TNS                                 | 0.0 ns                       |
+| Clock Removal: 'Clk': Per-clock Edge TNS                         | 0.000 ns                     |
+| Clock Removal: 'Clk': Per-clock Keeper TNS                       | 0.000 ns                     |
+| Clock Removal: 'Clk': Worst-case Slack                           | 3.948 ns                     |
+| Clock Removal: Total Keeper TNS                                  | 0.0 ns                       |
+| Clock Setup: 'Clk': Actual Time                                  | 17.841 ns                    |
+| Clock Setup: 'Clk': Fmax                                         | 56.05 MHz                    |
+| Clock Setup: 'Clk': Per-clock Edge TNS                           | 0.000 ns                     |
+| Clock Setup: 'Clk': Per-clock Keeper TNS                         | 0.000 ns                     |
+| Clock Setup: 'Clk': Restricted Fmax                              | 56.05 MHz                    |
+| Clock Setup: 'Clk': Worst-case Slack                             | 2.160 ns                     |
+| Clock Setup: Total Keeper TNS                                    | 0.0 ns                       |
+| CRC blocks                                                       | 0 / 1 ( 0 % )                |
+| Elapsed Time: Analysis & Synthesis                               | 00:11:41                     |
+| Elapsed Time: Assembler                                          | 00:00:17                     |
+| Elapsed Time: EDA Netlist Writer                                 | 00:02:33                     |
+| Elapsed Time: Fitter                                             | 00:11:09                     |
+| Elapsed Time: TimeQuest Timing Analyzer                          | 00:01:03                     |
+| Elapsed Time: Total                                              | 00:26:43                     |
+| Embedded Multiplier 9-bit elements                               | 0 / 532 ( 0 % )              |
+| Global clocks                                                    | 3 / 20 ( 15 % )              |
+| Global signals                                                   | 3                            |
+| Highest non-global fan-out                                       | 9612                         |
+| I/O pins                                                         | 89 / 529 ( 17 % )            |
+| I/O pins: Clock pins                                             | 1 / 7 ( 14 % )               |
+| I/O pins: Dedicated input pins                                   | 0 / 9 ( 0 % )                |
+| Impedance control blocks                                         | 0 / 4 ( 0 % )                |
+| JTAGs                                                            | 0 / 1 ( 0 % )                |
+| Logic element usage by number of LUT inputs: 3 input functions   | 1743                         |
+| Logic element usage by number of LUT inputs: 4 input functions   | 45839                        |
+| Logic element usage by number of LUT inputs: <=2 input functions | 2584                         |
+| Logic element usage by number of LUT inputs: Register only       | 9                            |
+| Logic elements by mode: arithmetic mode                          | 385                          |
+| Logic elements by mode: normal mode                              | 49781                        |
+| M9Ks                                                             | 0 / 432 ( 0 % )              |
+| Maximum fan-out                                                  | 9653                         |
+| Peak interconnect usage (total/H/V)                              | 58% / 54% / 63%              |
+| PLLs                                                             | 0 / 4 ( 0 % )                |
+| Timing Model                                                     | Slow 1200mV 85C              |
+| Total block memory bits                                          | 0 / 3,981,312 ( 0 % )        |
+| Total block memory implementation bits                           | 0 / 3,981,312 ( 0 % )        |
+| Total fan-out                                                    | 213743                       |
+| Total Keeper TNS                                                 | 0.0 ns                       |
+| Total LABs:  partially or completely used                        | 3,716 / 7,155 ( 52 % )       |
+| Total logic elements                                             | 50175                        |
+| Total logic elements: Combinational with a register              | 9796                         |
+| Total logic elements: Combinational with no register             | 40370                        |
+| Total logic elements: Register only                              | 9                            |
+| Total memory bits                                                | unknown                      |
+| Total registers                                                  | 9,805 / 117,053 ( 8 % )      |
+| Total registers: Dedicated logic registers                       | 9,805 / 114,480 ( 9 % )      |
+| Total registers: I/O registers                                   | 0 / 2,573 ( 0 % )            |
+| Total Thermal Power Dissipation                                  | unknown                      |
+| Virtual pins                                                     | 0                            |
+| Worst-case Slack                                                 | 0.400 ns (Clock Hold: 'Clk') |
++------------------------------------------------------------------+------------------------------+
+
+
++-----------------------------------------------------------------------------+
+| Detailed Cumulative Results                                                 |
++-----------------------------------------------------------------------------+
++----------------------------+-------------------+---------------+-----------------+----------------------------------------+---------------------------------------+-----------------------------------------+-------------------------------------+------------------------------+------------------------------+-------------------------------------------+---------------------------------------------+-----------------------------------------+----------------------------------+------------------------------------------+--------------------------------------------+----------------------------------------+---------------------------------+---------------------------------+--------------------------+----------------------------------------+------------------------------------------+-------------------------------------+--------------------------------------+-------------------------------+---------------+------------------------------------+-------------------------+----------------------------------+----------------------+-----------------------------------------+---------------------+------------------------------------+-----------------+----------------+----------------------------+-------------------+----------------------+--------------------------------+--------------------------+---------------+----------------------------------------------------------------+----------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+-----------------------------------------+-------------------------------------+-----------------+-----------------+-------------------------------------+---------------+-----------------+-------------------------+----------------------------------------+---------------+------------------+-------------------------------------------+----------------------+-----------------------------------------------------+------------------------------------------------------+-------------------------------------+-------------------+-------------------------+--------------------------------------------+--------------------------------+---------------------------------+--------------+------------------------------+
+| Point                      | All Failing Paths | ASMI blocks   | Average fan-out | Average interconnect usage (total/H/V) | Clock Hold: 'Clk': Per-clock Edge TNS | Clock Hold: 'Clk': Per-clock Keeper TNS | Clock Hold: 'Clk': Worst-case Slack | Clock Hold: Total Keeper TNS | Clock Period: Geometric Mean | Clock Recovery: 'Clk': Per-clock Edge TNS | Clock Recovery: 'Clk': Per-clock Keeper TNS | Clock Recovery: 'Clk': Worst-case Slack | Clock Recovery: Total Keeper TNS | Clock Removal: 'Clk': Per-clock Edge TNS | Clock Removal: 'Clk': Per-clock Keeper TNS | Clock Removal: 'Clk': Worst-case Slack | Clock Removal: Total Keeper TNS | Clock Setup: 'Clk': Actual Time | Clock Setup: 'Clk': Fmax | Clock Setup: 'Clk': Per-clock Edge TNS | Clock Setup: 'Clk': Per-clock Keeper TNS | Clock Setup: 'Clk': Restricted Fmax | Clock Setup: 'Clk': Worst-case Slack | Clock Setup: Total Keeper TNS | CRC blocks    | Elapsed Time: Analysis & Synthesis | Elapsed Time: Assembler | Elapsed Time: EDA Netlist Writer | Elapsed Time: Fitter | Elapsed Time: TimeQuest Timing Analyzer | Elapsed Time: Total | Embedded Multiplier 9-bit elements | Global clocks   | Global signals | Highest non-global fan-out | I/O pins          | I/O pins: Clock pins | I/O pins: Dedicated input pins | Impedance control blocks | JTAGs         | Logic element usage by number of LUT inputs: 3 input functions | Logic element usage by number of LUT inputs: 4 input functions | Logic element usage by number of LUT inputs: <=2 input functions | Logic element usage by number of LUT inputs: Register only | Logic elements by mode: arithmetic mode | Logic elements by mode: normal mode | M9Ks            | Maximum fan-out | Peak interconnect usage (total/H/V) | PLLs          | Timing Model    | Total block memory bits | Total block memory implementation bits | Total fan-out | Total Keeper TNS | Total LABs:  partially or completely used | Total logic elements | Total logic elements: Combinational with a register | Total logic elements: Combinational with no register | Total logic elements: Register only | Total memory bits | Total registers         | Total registers: Dedicated logic registers | Total registers: I/O registers | Total Thermal Power Dissipation | Virtual pins | Worst-case Slack             |
++----------------------------+-------------------+---------------+-----------------+----------------------------------------+---------------------------------------+-----------------------------------------+-------------------------------------+------------------------------+------------------------------+-------------------------------------------+---------------------------------------------+-----------------------------------------+----------------------------------+------------------------------------------+--------------------------------------------+----------------------------------------+---------------------------------+---------------------------------+--------------------------+----------------------------------------+------------------------------------------+-------------------------------------+--------------------------------------+-------------------------------+---------------+------------------------------------+-------------------------+----------------------------------+----------------------+-----------------------------------------+---------------------+------------------------------------+-----------------+----------------+----------------------------+-------------------+----------------------+--------------------------------+--------------------------+---------------+----------------------------------------------------------------+----------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+-----------------------------------------+-------------------------------------+-----------------+-----------------+-------------------------------------+---------------+-----------------+-------------------------+----------------------------------------+---------------+------------------+-------------------------------------------+----------------------+-----------------------------------------------------+------------------------------------------------------+-------------------------------------+-------------------+-------------------------+--------------------------------------------+--------------------------------+---------------------------------+--------------+------------------------------+
+| base-slow-1200mV-85C       | 0                 | 0 / 1 ( 0 % ) | 3.55            | 28% / 26% / 30%                        | 0.000 ns                              | 0.000 ns                                | 0.400 ns                            | 0.0 ns                       | 17.84 ns                     | 0.000 ns                                  | 0.000 ns                                    | 14.003 ns                               | 0.0 ns                           | 0.000 ns                                 | 0.000 ns                                   | 3.948 ns                               | 0.0 ns                          | 17.841 ns                       | 56.05 MHz                | 0.000 ns                               | 0.000 ns                                 | 56.05 MHz                           | 2.160 ns                             | 0.0 ns                        | 0 / 1 ( 0 % ) | 00:11:41                           | 00:00:17                | 00:02:33                         | 00:11:09             | 00:01:03                                | 00:26:43            | 0 / 532 ( 0 % )                    | 3 / 20 ( 15 % ) | 3              | 9612                       | 89 / 529 ( 17 % ) | 1 / 7 ( 14 % )       | 0 / 9 ( 0 % )                  | 0 / 4 ( 0 % )            | 0 / 1 ( 0 % ) | 1743                                                           | 45839                                                          | 2584                                                             | 9                                                          | 385                                     | 49781                               | 0 / 432 ( 0 % ) | 9653            | 58% / 54% / 63%                     | 0 / 4 ( 0 % ) | Slow 1200mV 85C | 0 / 3,981,312 ( 0 % )   | 0 / 3,981,312 ( 0 % )                  | 213743        | 0.0 ns           | 3,716 / 7,155 ( 52 % )                    | 50175                | 9796                                                | 40370                                                | 9                                   | unknown           | 9,805 / 117,053 ( 8 % ) | 9,805 / 114,480 ( 9 % )                    | 0 / 2,573 ( 0 % )              | unknown                         | 0            | 0.400 ns (Clock Hold: 'Clk') |
+| base-slow-1200mV-0C        | 0                 | 0 / 1 ( 0 % ) | 3.55            | 28% / 26% / 30%                        | 0.000 ns                              | 0.000 ns                                | 0.352 ns                            | 0.0 ns                       | 16.49 ns                     | 0.000 ns                                  | 0.000 ns                                    | 14.480 ns                               | 0.0 ns                           | 0.000 ns                                 | 0.000 ns                                   | 3.726 ns                               | 0.0 ns                          | 16.485 ns                       | 60.66 MHz                | 0.000 ns                               | 0.000 ns                                 | 60.66 MHz                           | 3.515 ns                             | 0.0 ns                        | 0 / 1 ( 0 % ) | 00:11:41                           | 00:00:17                | 00:02:33                         | 00:11:09             | 00:01:03                                | 00:26:43            | 0 / 532 ( 0 % )                    | 3 / 20 ( 15 % ) | 3              | 9612                       | 89 / 529 ( 17 % ) | 1 / 7 ( 14 % )       | 0 / 9 ( 0 % )                  | 0 / 4 ( 0 % )            | 0 / 1 ( 0 % ) | 1743                                                           | 45839                                                          | 2584                                                             | 9                                                          | 385                                     | 49781                               | 0 / 432 ( 0 % ) | 9653            | 58% / 54% / 63%                     | 0 / 4 ( 0 % ) | Slow 1200mV 0C  | 0 / 3,981,312 ( 0 % )   | 0 / 3,981,312 ( 0 % )                  | 213743        | 0.0 ns           | 3,716 / 7,155 ( 52 % )                    | 50175                | 9796                                                | 40370                                                | 9                                   | unknown           | 9,805 / 117,053 ( 8 % ) | 9,805 / 114,480 ( 9 % )                    | 0 / 2,573 ( 0 % )              | unknown                         | 0            | 0.352 ns (Clock Hold: 'Clk') |
+| base-fast-1200mV-0C (Best) | 0                 | 0 / 1 ( 0 % ) | 3.55            | 28% / 26% / 30%                        | 0.000 ns                              | 0.000 ns                                | 0.180 ns                            | 0.0 ns                       | 9.63 ns                      | 0.000 ns                                  | 0.000 ns                                    | 15.077 ns                               | 0.0 ns                           | 0.000 ns                                 | 0.000 ns                                   | 2.869 ns                               | 0.0 ns                          | 9.630 ns                        | 103.84 MHz               | 0.000 ns                               | 0.000 ns                                 | 103.84 MHz                          | 10.370 ns                            | 0.0 ns                        | 0 / 1 ( 0 % ) | 00:11:41                           | 00:00:17                | 00:02:33                         | 00:11:09             | 00:01:03                                | 00:26:43            | 0 / 532 ( 0 % )                    | 3 / 20 ( 15 % ) | 3              | 9612                       | 89 / 529 ( 17 % ) | 1 / 7 ( 14 % )       | 0 / 9 ( 0 % )                  | 0 / 4 ( 0 % )            | 0 / 1 ( 0 % ) | 1743                                                           | 45839                                                          | 2584                                                             | 9                                                          | 385                                     | 49781                               | 0 / 432 ( 0 % ) | 9653            | 58% / 54% / 63%                     | 0 / 4 ( 0 % ) | Fast 1200mV 0C  | 0 / 3,981,312 ( 0 % )   | 0 / 3,981,312 ( 0 % )                  | 213743        | 0.0 ns           | 3,716 / 7,155 ( 52 % )                    | 50175                | 9796                                                | 40370                                                | 9                                   | unknown           | 9,805 / 117,053 ( 8 % ) | 9,805 / 114,480 ( 9 % )                    | 0 / 2,573 ( 0 % )              | unknown                         | 0            | 0.180 ns (Clock Hold: 'Clk') |
++----------------------------+-------------------+---------------+-----------------+----------------------------------------+---------------------------------------+-----------------------------------------+-------------------------------------+------------------------------+------------------------------+-------------------------------------------+---------------------------------------------+-----------------------------------------+----------------------------------+------------------------------------------+--------------------------------------------+----------------------------------------+---------------------------------+---------------------------------+--------------------------+----------------------------------------+------------------------------------------+-------------------------------------+--------------------------------------+-------------------------------+---------------+------------------------------------+-------------------------+----------------------------------+----------------------+-----------------------------------------+---------------------+------------------------------------+-----------------+----------------+----------------------------+-------------------+----------------------+--------------------------------+--------------------------+---------------+----------------------------------------------------------------+----------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+-----------------------------------------+-------------------------------------+-----------------+-----------------+-------------------------------------+---------------+-----------------+-------------------------+----------------------------------------+---------------+------------------+-------------------------------------------+----------------------+-----------------------------------------------------+------------------------------------------------------+-------------------------------------+-------------------+-------------------------+--------------------------------------------+--------------------------------+---------------------------------+--------------+------------------------------+
+
+Info: Zero failing paths achieved -- halting exploration
+Info: Halting exploration
+Info: Restoring base settings at end of flow
+
++-----------------------------------------------------------------------------+
+| Flow Summary                                                                |
++-----------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------+
+| Detailed Results                                                            |
++-----------------------------------------------------------------------------+
++----------------------------+-------------------+---------------+-----------------+----------------------------------------+---------------------------------------+-----------------------------------------+-------------------------------------+------------------------------+------------------------------+-------------------------------------------+---------------------------------------------+-----------------------------------------+----------------------------------+------------------------------------------+--------------------------------------------+----------------------------------------+---------------------------------+---------------------------------+--------------------------+----------------------------------------+------------------------------------------+-------------------------------------+--------------------------------------+-------------------------------+---------------+------------------------------------+-------------------------+----------------------------------+----------------------+-----------------------------------------+---------------------+------------------------------------+-----------------+----------------+----------------------------+-------------------+----------------------+--------------------------------+--------------------------+---------------+----------------------------------------------------------------+----------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+-----------------------------------------+-------------------------------------+-----------------+-----------------+-------------------------------------+---------------+-----------------+-------------------------+----------------------------------------+---------------+------------------+-------------------------------------------+----------------------+-----------------------------------------------------+------------------------------------------------------+-------------------------------------+-------------------+-------------------------+--------------------------------------------+--------------------------------+---------------------------------+--------------+------------------------------+
+| Point                      | All Failing Paths | ASMI blocks   | Average fan-out | Average interconnect usage (total/H/V) | Clock Hold: 'Clk': Per-clock Edge TNS | Clock Hold: 'Clk': Per-clock Keeper TNS | Clock Hold: 'Clk': Worst-case Slack | Clock Hold: Total Keeper TNS | Clock Period: Geometric Mean | Clock Recovery: 'Clk': Per-clock Edge TNS | Clock Recovery: 'Clk': Per-clock Keeper TNS | Clock Recovery: 'Clk': Worst-case Slack | Clock Recovery: Total Keeper TNS | Clock Removal: 'Clk': Per-clock Edge TNS | Clock Removal: 'Clk': Per-clock Keeper TNS | Clock Removal: 'Clk': Worst-case Slack | Clock Removal: Total Keeper TNS | Clock Setup: 'Clk': Actual Time | Clock Setup: 'Clk': Fmax | Clock Setup: 'Clk': Per-clock Edge TNS | Clock Setup: 'Clk': Per-clock Keeper TNS | Clock Setup: 'Clk': Restricted Fmax | Clock Setup: 'Clk': Worst-case Slack | Clock Setup: Total Keeper TNS | CRC blocks    | Elapsed Time: Analysis & Synthesis | Elapsed Time: Assembler | Elapsed Time: EDA Netlist Writer | Elapsed Time: Fitter | Elapsed Time: TimeQuest Timing Analyzer | Elapsed Time: Total | Embedded Multiplier 9-bit elements | Global clocks   | Global signals | Highest non-global fan-out | I/O pins          | I/O pins: Clock pins | I/O pins: Dedicated input pins | Impedance control blocks | JTAGs         | Logic element usage by number of LUT inputs: 3 input functions | Logic element usage by number of LUT inputs: 4 input functions | Logic element usage by number of LUT inputs: <=2 input functions | Logic element usage by number of LUT inputs: Register only | Logic elements by mode: arithmetic mode | Logic elements by mode: normal mode | M9Ks            | Maximum fan-out | Peak interconnect usage (total/H/V) | PLLs          | Timing Model    | Total block memory bits | Total block memory implementation bits | Total fan-out | Total Keeper TNS | Total LABs:  partially or completely used | Total logic elements | Total logic elements: Combinational with a register | Total logic elements: Combinational with no register | Total logic elements: Register only | Total memory bits | Total registers         | Total registers: Dedicated logic registers | Total registers: I/O registers | Total Thermal Power Dissipation | Virtual pins | Worst-case Slack             |
++----------------------------+-------------------+---------------+-----------------+----------------------------------------+---------------------------------------+-----------------------------------------+-------------------------------------+------------------------------+------------------------------+-------------------------------------------+---------------------------------------------+-----------------------------------------+----------------------------------+------------------------------------------+--------------------------------------------+----------------------------------------+---------------------------------+---------------------------------+--------------------------+----------------------------------------+------------------------------------------+-------------------------------------+--------------------------------------+-------------------------------+---------------+------------------------------------+-------------------------+----------------------------------+----------------------+-----------------------------------------+---------------------+------------------------------------+-----------------+----------------+----------------------------+-------------------+----------------------+--------------------------------+--------------------------+---------------+----------------------------------------------------------------+----------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+-----------------------------------------+-------------------------------------+-----------------+-----------------+-------------------------------------+---------------+-----------------+-------------------------+----------------------------------------+---------------+------------------+-------------------------------------------+----------------------+-----------------------------------------------------+------------------------------------------------------+-------------------------------------+-------------------+-------------------------+--------------------------------------------+--------------------------------+---------------------------------+--------------+------------------------------+
+| base-slow-1200mV-85C       | 0                 | 0 / 1 ( 0 % ) | 3.55            | 28% / 26% / 30%                        | 0.000 ns                              | 0.000 ns                                | 0.400 ns                            | 0.0 ns                       | 17.84 ns                     | 0.000 ns                                  | 0.000 ns                                    | 14.003 ns                               | 0.0 ns                           | 0.000 ns                                 | 0.000 ns                                   | 3.948 ns                               | 0.0 ns                          | 17.841 ns                       | 56.05 MHz                | 0.000 ns                               | 0.000 ns                                 | 56.05 MHz                           | 2.160 ns                             | 0.0 ns                        | 0 / 1 ( 0 % ) | 00:11:41                           | 00:00:17                | 00:02:33                         | 00:11:09             | 00:01:03                                | 00:26:43            | 0 / 532 ( 0 % )                    | 3 / 20 ( 15 % ) | 3              | 9612                       | 89 / 529 ( 17 % ) | 1 / 7 ( 14 % )       | 0 / 9 ( 0 % )                  | 0 / 4 ( 0 % )            | 0 / 1 ( 0 % ) | 1743                                                           | 45839                                                          | 2584                                                             | 9                                                          | 385                                     | 49781                               | 0 / 432 ( 0 % ) | 9653            | 58% / 54% / 63%                     | 0 / 4 ( 0 % ) | Slow 1200mV 85C | 0 / 3,981,312 ( 0 % )   | 0 / 3,981,312 ( 0 % )                  | 213743        | 0.0 ns           | 3,716 / 7,155 ( 52 % )                    | 50175                | 9796                                                | 40370                                                | 9                                   | unknown           | 9,805 / 117,053 ( 8 % ) | 9,805 / 114,480 ( 9 % )                    | 0 / 2,573 ( 0 % )              | unknown                         | 0            | 0.400 ns (Clock Hold: 'Clk') |
+| base-slow-1200mV-0C        | 0                 | 0 / 1 ( 0 % ) | 3.55            | 28% / 26% / 30%                        | 0.000 ns                              | 0.000 ns                                | 0.352 ns                            | 0.0 ns                       | 16.49 ns                     | 0.000 ns                                  | 0.000 ns                                    | 14.480 ns                               | 0.0 ns                           | 0.000 ns                                 | 0.000 ns                                   | 3.726 ns                               | 0.0 ns                          | 16.485 ns                       | 60.66 MHz                | 0.000 ns                               | 0.000 ns                                 | 60.66 MHz                           | 3.515 ns                             | 0.0 ns                        | 0 / 1 ( 0 % ) | 00:11:41                           | 00:00:17                | 00:02:33                         | 00:11:09             | 00:01:03                                | 00:26:43            | 0 / 532 ( 0 % )                    | 3 / 20 ( 15 % ) | 3              | 9612                       | 89 / 529 ( 17 % ) | 1 / 7 ( 14 % )       | 0 / 9 ( 0 % )                  | 0 / 4 ( 0 % )            | 0 / 1 ( 0 % ) | 1743                                                           | 45839                                                          | 2584                                                             | 9                                                          | 385                                     | 49781                               | 0 / 432 ( 0 % ) | 9653            | 58% / 54% / 63%                     | 0 / 4 ( 0 % ) | Slow 1200mV 0C  | 0 / 3,981,312 ( 0 % )   | 0 / 3,981,312 ( 0 % )                  | 213743        | 0.0 ns           | 3,716 / 7,155 ( 52 % )                    | 50175                | 9796                                                | 40370                                                | 9                                   | unknown           | 9,805 / 117,053 ( 8 % ) | 9,805 / 114,480 ( 9 % )                    | 0 / 2,573 ( 0 % )              | unknown                         | 0            | 0.352 ns (Clock Hold: 'Clk') |
+| base-fast-1200mV-0C (Best) | 0                 | 0 / 1 ( 0 % ) | 3.55            | 28% / 26% / 30%                        | 0.000 ns                              | 0.000 ns                                | 0.180 ns                            | 0.0 ns                       | 9.63 ns                      | 0.000 ns                                  | 0.000 ns                                    | 15.077 ns                               | 0.0 ns                           | 0.000 ns                                 | 0.000 ns                                   | 2.869 ns                               | 0.0 ns                          | 9.630 ns                        | 103.84 MHz               | 0.000 ns                               | 0.000 ns                                 | 103.84 MHz                          | 10.370 ns                            | 0.0 ns                        | 0 / 1 ( 0 % ) | 00:11:41                           | 00:00:17                | 00:02:33                         | 00:11:09             | 00:01:03                                | 00:26:43            | 0 / 532 ( 0 % )                    | 3 / 20 ( 15 % ) | 3              | 9612                       | 89 / 529 ( 17 % ) | 1 / 7 ( 14 % )       | 0 / 9 ( 0 % )                  | 0 / 4 ( 0 % )            | 0 / 1 ( 0 % ) | 1743                                                           | 45839                                                          | 2584                                                             | 9                                                          | 385                                     | 49781                               | 0 / 432 ( 0 % ) | 9653            | 58% / 54% / 63%                     | 0 / 4 ( 0 % ) | Fast 1200mV 0C  | 0 / 3,981,312 ( 0 % )   | 0 / 3,981,312 ( 0 % )                  | 213743        | 0.0 ns           | 3,716 / 7,155 ( 52 % )                    | 50175                | 9796                                                | 40370                                                | 9                                   | unknown           | 9,805 / 117,053 ( 8 % ) | 9,805 / 114,480 ( 9 % )                    | 0 / 2,573 ( 0 % )              | unknown                         | 0            | 0.180 ns (Clock Hold: 'Clk') |
++----------------------------+-------------------+---------------+-----------------+----------------------------------------+---------------------------------------+-----------------------------------------+-------------------------------------+------------------------------+------------------------------+-------------------------------------------+---------------------------------------------+-----------------------------------------+----------------------------------+------------------------------------------+--------------------------------------------+----------------------------------------+---------------------------------+---------------------------------+--------------------------+----------------------------------------+------------------------------------------+-------------------------------------+--------------------------------------+-------------------------------+---------------+------------------------------------+-------------------------+----------------------------------+----------------------+-----------------------------------------+---------------------+------------------------------------+-----------------+----------------+----------------------------+-------------------+----------------------+--------------------------------+--------------------------+---------------+----------------------------------------------------------------+----------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+-----------------------------------------+-------------------------------------+-----------------+-----------------+-------------------------------------+---------------+-----------------+-------------------------+----------------------------------------+---------------+------------------+-------------------------------------------+----------------------+-----------------------------------------------------+------------------------------------------------------+-------------------------------------+-------------------+-------------------------+--------------------------------------------+--------------------------------+---------------------------------+--------------+------------------------------+
+
+
++-----------------------------------------------------------------------------+
+| Results for Base                                                            |
++-----------------------------------------------------------------------------+
++------------------------------------------------------------------+------------------------------+
+| All Failing Paths                                                | 0                            |
+| ASMI blocks                                                      | 0 / 1 ( 0 % )                |
+| Average fan-out                                                  | 3.55                         |
+| Average interconnect usage (total/H/V)                           | 28% / 26% / 30%              |
+| Clock Hold: 'Clk': Per-clock Edge TNS                            | 0.000 ns                     |
+| Clock Hold: 'Clk': Per-clock Keeper TNS                          | 0.000 ns                     |
+| Clock Hold: 'Clk': Worst-case Slack                              | 0.400 ns                     |
+| Clock Hold: Total Keeper TNS                                     | 0.0 ns                       |
+| Clock Period: Geometric Mean                                     | 17.84 ns                     |
+| Clock Recovery: 'Clk': Per-clock Edge TNS                        | 0.000 ns                     |
+| Clock Recovery: 'Clk': Per-clock Keeper TNS                      | 0.000 ns                     |
+| Clock Recovery: 'Clk': Worst-case Slack                          | 14.003 ns                    |
+| Clock Recovery: Total Keeper TNS                                 | 0.0 ns                       |
+| Clock Removal: 'Clk': Per-clock Edge TNS                         | 0.000 ns                     |
+| Clock Removal: 'Clk': Per-clock Keeper TNS                       | 0.000 ns                     |
+| Clock Removal: 'Clk': Worst-case Slack                           | 3.948 ns                     |
+| Clock Removal: Total Keeper TNS                                  | 0.0 ns                       |
+| Clock Setup: 'Clk': Actual Time                                  | 17.841 ns                    |
+| Clock Setup: 'Clk': Fmax                                         | 56.05 MHz                    |
+| Clock Setup: 'Clk': Per-clock Edge TNS                           | 0.000 ns                     |
+| Clock Setup: 'Clk': Per-clock Keeper TNS                         | 0.000 ns                     |
+| Clock Setup: 'Clk': Restricted Fmax                              | 56.05 MHz                    |
+| Clock Setup: 'Clk': Worst-case Slack                             | 2.160 ns                     |
+| Clock Setup: Total Keeper TNS                                    | 0.0 ns                       |
+| CRC blocks                                                       | 0 / 1 ( 0 % )                |
+| Elapsed Time: Analysis & Synthesis                               | 00:11:41                     |
+| Elapsed Time: Assembler                                          | 00:00:17                     |
+| Elapsed Time: EDA Netlist Writer                                 | 00:02:33                     |
+| Elapsed Time: Fitter                                             | 00:11:09                     |
+| Elapsed Time: TimeQuest Timing Analyzer                          | 00:01:03                     |
+| Elapsed Time: Total                                              | 00:26:43                     |
+| Embedded Multiplier 9-bit elements                               | 0 / 532 ( 0 % )              |
+| Global clocks                                                    | 3 / 20 ( 15 % )              |
+| Global signals                                                   | 3                            |
+| Highest non-global fan-out                                       | 9612                         |
+| I/O pins                                                         | 89 / 529 ( 17 % )            |
+| I/O pins: Clock pins                                             | 1 / 7 ( 14 % )               |
+| I/O pins: Dedicated input pins                                   | 0 / 9 ( 0 % )                |
+| Impedance control blocks                                         | 0 / 4 ( 0 % )                |
+| JTAGs                                                            | 0 / 1 ( 0 % )                |
+| Logic element usage by number of LUT inputs: 3 input functions   | 1743                         |
+| Logic element usage by number of LUT inputs: 4 input functions   | 45839                        |
+| Logic element usage by number of LUT inputs: <=2 input functions | 2584                         |
+| Logic element usage by number of LUT inputs: Register only       | 9                            |
+| Logic elements by mode: arithmetic mode                          | 385                          |
+| Logic elements by mode: normal mode                              | 49781                        |
+| M9Ks                                                             | 0 / 432 ( 0 % )              |
+| Maximum fan-out                                                  | 9653                         |
+| Peak interconnect usage (total/H/V)                              | 58% / 54% / 63%              |
+| PLLs                                                             | 0 / 4 ( 0 % )                |
+| Timing Model                                                     | Slow 1200mV 85C              |
+| Total block memory bits                                          | 0 / 3,981,312 ( 0 % )        |
+| Total block memory implementation bits                           | 0 / 3,981,312 ( 0 % )        |
+| Total fan-out                                                    | 213743                       |
+| Total Keeper TNS                                                 | 0.0 ns                       |
+| Total LABs:  partially or completely used                        | 3,716 / 7,155 ( 52 % )       |
+| Total logic elements                                             | 50175                        |
+| Total logic elements: Combinational with a register              | 9796                         |
+| Total logic elements: Combinational with no register             | 40370                        |
+| Total logic elements: Register only                              | 9                            |
+| Total memory bits                                                | unknown                      |
+| Total registers                                                  | 9,805 / 117,053 ( 8 % )      |
+| Total registers: Dedicated logic registers                       | 9,805 / 114,480 ( 9 % )      |
+| Total registers: I/O registers                                   | 0 / 2,573 ( 0 % )            |
+| Total Thermal Power Dissipation                                  | unknown                      |
+| Virtual pins                                                     | 0                            |
+| Worst-case Slack                                                 | 0.400 ns (Clock Hold: 'Clk') |
++------------------------------------------------------------------+------------------------------+
+
+Info: Best results were found at point base-2
+
++-----------------------------------------------------------------------------+
+| Settings for Point base-2 (Best)                                            |
++-----------------------------------------------------------------------------+
++----------------------------------------------+-----------+------------+
+| Setting                                      | New Value | Base Value |
++----------------------------------------------+-----------+------------+
+| PHYSICAL_SYNTHESIS_REGISTER_RETIMING         | OFF       | OFF        |
+| SEED                                         | 1         | 1          |
+| STATE_MACHINE_PROCESSING                     | AUTO      | AUTO       |
+| MUX_RESTRUCTURE                              | AUTO      | AUTO       |
+| PHYSICAL_SYNTHESIS_COMBO_LOGIC               | OFF       | OFF        |
+| FITTER_EFFORT                                | FAST FIT  | FAST FIT   |
+| PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION      | OFF       | OFF        |
+| ROUTER_TIMING_OPTIMIZATION_LEVEL             | NORMAL    | NORMAL     |
+| ROUTER_LCELL_INSERTION_AND_LOGIC_DUPLICATION | AUTO      | AUTO       |
+| CYCLONEII_OPTIMIZATION_TECHNIQUE             | BALANCED  | BALANCED   |
+| PRE_MAPPING_RESYNTHESIS                      | OFF       | OFF        |
+| PHYSICAL_SYNTHESIS_EFFORT                    | NORMAL    | NORMAL     |
+| PLACEMENT_EFFORT_MULTIPLIER                  | 1.0       | 1.0        |
+| ENABLE_BENEFICIAL_SKEW_OPTIMIZATION          | ON        | ON         |
++----------------------------------------------+-----------+------------+
+
+
++-------------------------------------------------------------------------------+
+| QSF Setting                                                                   |
++-------------------------------------------------------------------------------+
+| set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING OFF          |
+| set_global_assignment -name SEED 1                                            |
+| set_global_assignment -name STATE_MACHINE_PROCESSING AUTO                     |
+| set_global_assignment -name MUX_RESTRUCTURE AUTO                              |
+| set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC OFF                |
+| set_global assignment -name FITTER_EFFORT "FAST FIT"                          |
+| set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION OFF       |
+| set_global_assignment -name ROUTER_TIMING_OPTIMIZATION_LEVEL NORMAL           |
+| set_global_assignment -name ROUTER_LCELL_INSERTION_AND_LOGIC_DUPLICATION AUTO |
+| set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE BALANCED         |
+| set_global_assignment -name PRE_MAPPING_RESYNTHESIS OFF                       |
+| set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT NORMAL                  |
+| set_global_assignment -name PLACEMENT_EFFORT_MULTIPLIER 1.0                   |
+| set_global_assignment -name ENABLE_BENEFICIAL_SKEW_OPTIMIZATION ON            |
++-------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+| Results for Point base-2 (Best)                                             |
++-----------------------------------------------------------------------------+
++------------------------------------------------------------------+------------------------------+
+| All Failing Paths                                                | 0                            |
+| ASMI blocks                                                      | 0 / 1 ( 0 % )                |
+| Average fan-out                                                  | 3.55                         |
+| Average interconnect usage (total/H/V)                           | 28% / 26% / 30%              |
+| Clock Hold: 'Clk': Per-clock Edge TNS                            | 0.000 ns                     |
+| Clock Hold: 'Clk': Per-clock Keeper TNS                          | 0.000 ns                     |
+| Clock Hold: 'Clk': Worst-case Slack                              | 0.180 ns                     |
+| Clock Hold: Total Keeper TNS                                     | 0.0 ns                       |
+| Clock Period: Geometric Mean                                     | 9.63 ns                      |
+| Clock Recovery: 'Clk': Per-clock Edge TNS                        | 0.000 ns                     |
+| Clock Recovery: 'Clk': Per-clock Keeper TNS                      | 0.000 ns                     |
+| Clock Recovery: 'Clk': Worst-case Slack                          | 15.077 ns                    |
+| Clock Recovery: Total Keeper TNS                                 | 0.0 ns                       |
+| Clock Removal: 'Clk': Per-clock Edge TNS                         | 0.000 ns                     |
+| Clock Removal: 'Clk': Per-clock Keeper TNS                       | 0.000 ns                     |
+| Clock Removal: 'Clk': Worst-case Slack                           | 2.869 ns                     |
+| Clock Removal: Total Keeper TNS                                  | 0.0 ns                       |
+| Clock Setup: 'Clk': Actual Time                                  | 9.630 ns                     |
+| Clock Setup: 'Clk': Fmax                                         | 103.84 MHz                   |
+| Clock Setup: 'Clk': Per-clock Edge TNS                           | 0.000 ns                     |
+| Clock Setup: 'Clk': Per-clock Keeper TNS                         | 0.000 ns                     |
+| Clock Setup: 'Clk': Restricted Fmax                              | 103.84 MHz                   |
+| Clock Setup: 'Clk': Worst-case Slack                             | 10.370 ns                    |
+| Clock Setup: Total Keeper TNS                                    | 0.0 ns                       |
+| CRC blocks                                                       | 0 / 1 ( 0 % )                |
+| Elapsed Time: Analysis & Synthesis                               | 00:11:41                     |
+| Elapsed Time: Assembler                                          | 00:00:17                     |
+| Elapsed Time: EDA Netlist Writer                                 | 00:02:33                     |
+| Elapsed Time: Fitter                                             | 00:11:09                     |
+| Elapsed Time: TimeQuest Timing Analyzer                          | 00:01:03                     |
+| Elapsed Time: Total                                              | 00:26:43                     |
+| Embedded Multiplier 9-bit elements                               | 0 / 532 ( 0 % )              |
+| Global clocks                                                    | 3 / 20 ( 15 % )              |
+| Global signals                                                   | 3                            |
+| Highest non-global fan-out                                       | 9612                         |
+| I/O pins                                                         | 89 / 529 ( 17 % )            |
+| I/O pins: Clock pins                                             | 1 / 7 ( 14 % )               |
+| I/O pins: Dedicated input pins                                   | 0 / 9 ( 0 % )                |
+| Impedance control blocks                                         | 0 / 4 ( 0 % )                |
+| JTAGs                                                            | 0 / 1 ( 0 % )                |
+| Logic element usage by number of LUT inputs: 3 input functions   | 1743                         |
+| Logic element usage by number of LUT inputs: 4 input functions   | 45839                        |
+| Logic element usage by number of LUT inputs: <=2 input functions | 2584                         |
+| Logic element usage by number of LUT inputs: Register only       | 9                            |
+| Logic elements by mode: arithmetic mode                          | 385                          |
+| Logic elements by mode: normal mode                              | 49781                        |
+| M9Ks                                                             | 0 / 432 ( 0 % )              |
+| Maximum fan-out                                                  | 9653                         |
+| Peak interconnect usage (total/H/V)                              | 58% / 54% / 63%              |
+| PLLs                                                             | 0 / 4 ( 0 % )                |
+| Timing Model                                                     | Fast 1200mV 0C               |
+| Total block memory bits                                          | 0 / 3,981,312 ( 0 % )        |
+| Total block memory implementation bits                           | 0 / 3,981,312 ( 0 % )        |
+| Total fan-out                                                    | 213743                       |
+| Total Keeper TNS                                                 | 0.0 ns                       |
+| Total LABs:  partially or completely used                        | 3,716 / 7,155 ( 52 % )       |
+| Total logic elements                                             | 50175                        |
+| Total logic elements: Combinational with a register              | 9796                         |
+| Total logic elements: Combinational with no register             | 40370                        |
+| Total logic elements: Register only                              | 9                            |
+| Total memory bits                                                | unknown                      |
+| Total registers                                                  | 9,805 / 117,053 ( 8 % )      |
+| Total registers: Dedicated logic registers                       | 9,805 / 114,480 ( 9 % )      |
+| Total registers: I/O registers                                   | 0 / 2,573 ( 0 % )            |
+| Total Thermal Power Dissipation                                  | unknown                      |
+| Virtual pins                                                     | 0                            |
+| Worst-case Slack                                                 | 0.180 ns (Clock Hold: 'Clk') |
++------------------------------------------------------------------+------------------------------+
+
+
++-----------------------------------------------------------------------------+
+| Circuit Signature Report                                                    |
++-----------------------------------------------------------------------------+
++--+--------------------+---------------------+---------------------+
+|  | Average Slack Gain | Average Period Gain | Average Logic Count |
++--+--------------------+---------------------+---------------------+
++--+--------------------+---------------------+---------------------+
+
+
++-----------------------------------------------------------------------------+
+| Circuit Signature Compile Groups                                            |
++-----------------------------------------------------------------------------+
++------------+---------------+----------------+
+| Group Name | Group Members | Group Settings |
++------------+---------------+----------------+
+
+Info: Exploration has finished. 0 errors, 0 warnings
+Info: Exploration ended: Thu Dec 11 17:50:09 CST 2014
+Info: Elapsed time: 00:00:54

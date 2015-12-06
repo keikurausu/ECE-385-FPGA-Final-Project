@@ -1,0 +1,3 @@
+module lightCycleMovement2( input Reset, frame_clk, press,
+					input [7:0] keycode,
+               output [9:0]  CycleX, CycleY);

@@ -1,0 +1,37 @@
+module lightCycle (input logic [9:0] xcoord, ycoord,
+						 output logic outputBit);
+						 
+	int x,y;
+	assign x = xcoord;
+	assign y = ycoord;
+	
+	logic temp_variable;
+	parameter  [0:15][0:15] ROM = { 	
+		
+		16'b111100000001111;
+		16'b111100000001111;
+		16'b111100000001111;
+		16'b111100000001111;
+		16'b111100000001111;
+		16'b111100000001111;
+		16'b111111111111111;
+		16'b111111111111111;
+		16'b111111111111111;
+		16'b111111111111111;
+		16'b111100000001111;
+		16'b111100000001111;
+		16'b111100000001111;
+		16'b111100000001111;
+		16'b111100000001111;
+		16'b111100000001111;
+		
+		}
+		assign temp_variable = ROM [ycoord][xcoord];
+		always_comb
+		begin
+			if (x>=0 && x<=15 && y>=0 && y<= 15)
+				outbit= ROM [ycoord][xcoord];
+			else
+				outbit = 1'b0;
+		end
+endmodule 		
